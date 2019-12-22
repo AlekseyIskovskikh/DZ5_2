@@ -14,4 +14,22 @@
         android:orderInCategory="100"
         android:title="Записная книжка"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_open_screenrun"
+        android:orderInCategory="100"
+        android:title="Просмотр фото"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_open_spinner"
+        android:orderInCategory="100"
+        android:title="Спиннер «Страны-города-улицы»"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_open_calendar"
+        android:orderInCategory="100"
+        android:title="Календарь"
+        app:showAsAction="never" />
 </menu>

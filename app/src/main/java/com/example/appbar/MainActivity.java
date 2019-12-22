@@ -2,11 +2,12 @@ package com.example.appbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
-import android.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
     
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar Toolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(Toolbar);
+
 
     }
 
@@ -30,11 +32,33 @@ public class MainActivity extends AppCompatActivity {
 
         int id = item.getItemId();
 
+
         if (id == R.id.action_open_notes) {
-            Toast.makeText(MainActivity.this, "Отркыть записную книжку", Toast.LENGTH_LONG).show();
+            Toast.makeText(MainActivity.this, getText(R.string.appZapiska), Toast.LENGTH_LONG).show();
             return true;
         }
-
+        if (id == R.id.action_open_screenrun) {
+            Toast.makeText(MainActivity.this, getText(R.string.appScreenrun), Toast.LENGTH_LONG).show();
+            return true;
+        }
+        if (id == R.id.action_open_spinner) {
+            Toast.makeText(MainActivity.this, getText(R.string.appSpinner), Toast.LENGTH_LONG).show();
+            return true;
+        }
+        if (id == R.id.action_open_calendar) {
+            Toast.makeText(MainActivity.this, getText(R.string.appCalendar), Toast.LENGTH_LONG).show();
+            return true;
+        }
+        Intent intentNotes1 = new Intent(MainActivity.this, NotesActivity.class);
+        startActivity(intentNotes1);
+        Intent intentNotes2 = new Intent(MainActivity.this, ScreenranActivity.class);
+        startActivity(intentNotes2);
+        Intent intentNotes3 = new Intent(MainActivity.this, SpinnerActivity.class);
+        startActivity(intentNotes3);
+        Intent intentNotes4 = new Intent(MainActivity.this, CalendarActivity.class);
+        startActivity(intentNotes4);
         return super.onOptionsItemSelected(item);
+
     }
+
 }

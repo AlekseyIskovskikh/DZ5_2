@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">AppBar</string>
+    <string name="appZapiska">Отркыть записную книжку</string>
+    <string name="appScreenrun">Отркыть просмотр фото</string>
+    <string name="appCalendar">Отркыть календарь</string>
+    <string name="appSpinner">Отркыть спиннер</string>
+    <string name="txt_save">Сохранить</string>
+    <string name="app_name2">Просмотр фото</string>
+    <string name="btn_forward">Вперед</string>
+    <string name="btn_back">Назад</string>
+    <string name="txt_info">http://myfile.org/</string>
+    <string name="app_name3">spinner</string>
+    <string name="txtBtn">Показать адрес</string>
+    <string name="app_name4">Calendar</string>
+    <string name="txtStart">Дата-время старта задачи:</string>
+    <string name="txtStop">Дата-время окончания задачи:</string>
+    <string name="txtinform">Ошибка:</string>
+    <string name="txtkon">Оконочание:</string>
+    <string name="txtOk">OK</string>
+    <string name="txtstart">Старт</string>
+
+
 </resources>
