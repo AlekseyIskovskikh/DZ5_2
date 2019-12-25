@@ -35,26 +35,26 @@ public class MainActivity extends AppCompatActivity {
 
         if (id == R.id.action_open_notes) {
             Toast.makeText(MainActivity.this, getText(R.string.appZapiska), Toast.LENGTH_LONG).show();
-            Intent intentNotes4 = new Intent(MainActivity.this, NotesActivity.class);
-            startActivity(intentNotes4);
+            Intent intentNotes1 = new Intent(MainActivity.this, NotesActivity.class);
+            startActivity(intentNotes1);
             return true;
         }
         if (id == R.id.action_open_screenrun) {
             Toast.makeText(MainActivity.this, getText(R.string.appScreenrun), Toast.LENGTH_LONG).show();
-            Intent intentNotes3 = new Intent(MainActivity.this, ScreenranActivity.class);
-            startActivity(intentNotes3);
+            Intent intentNotes2 = new Intent(MainActivity.this, ScreenranActivity.class);
+            startActivity(intentNotes2);
             return true;
         }
         if (id == R.id.action_open_spinner) {
             Toast.makeText(MainActivity.this, getText(R.string.appSpinner), Toast.LENGTH_LONG).show();
-            Intent intentNotes2 = new Intent(MainActivity.this, SpinnerActivity.class);
-            startActivity(intentNotes2);
+            Intent intentNotes3 = new Intent(MainActivity.this, SpinnerActivity.class);
+            startActivity(intentNotes3);
             return true;
         }
         if (id == R.id.action_open_calendar) {
             Toast.makeText(MainActivity.this, getText(R.string.appCalendar), Toast.LENGTH_LONG).show();
-            Intent intentNotes1 = new Intent(MainActivity.this, CalendarActivity.class);
-            startActivity(intentNotes1);
+            Intent intentNotes4 = new Intent(MainActivity.this, CalendarActivity.class);
+            startActivity(intentNotes4);
             return true;
         }
         return super.onOptionsItemSelected(item);
